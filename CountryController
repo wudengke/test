@@ -29,9 +29,10 @@ namespace Nop.Web.Controllers
         public virtual ActionResult GetStatesByCountryId(string countryId, bool addSelectStateItem)
         {
             var model = _countryModelFactory.GetStatesByCountryId(countryId, addSelectStateItem);
+	    var someInfo = "今天是个好日子";
             return Json(model, JsonRequestBehavior.AllowGet);
         }
-
+	//测试冲突
         #endregion
     }
 }
